@@ -25,8 +25,10 @@ class Config(object):
 
     # ID of users that can use the bot commands
     AUTH_USERS = set(str(x) for x in os.environ.get("AUTH_USERS", "").split())
-
-
+     
+    # start message
+    START_IMG = os.environ.get("START_IMG", "")
+    
     # To save user details (Usefull for getting userinfo and total user counts)
     # May reduce filter capacity :(
     # Give yes or no
