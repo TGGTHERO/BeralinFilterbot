@@ -213,7 +213,7 @@ async def bot_status(client,message):
 async def start(client, message):
     await message.reply_photo(
         photo=START_IMG,
-
+        caption=Script.START_MSG.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
