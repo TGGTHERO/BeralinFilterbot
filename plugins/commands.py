@@ -237,9 +237,9 @@ async def start(client, message):
 
 @trojanz.on_message(filters.command('help') & filters.private)
 async def help(client, message):
-    await message.reply_text(
-        text=Script.HELP_MSG,
-        disable_web_page_preview=True,
+    await message.reply_photo(
+        photo=START_IMG,
+        caption=Script.START_MSG.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
