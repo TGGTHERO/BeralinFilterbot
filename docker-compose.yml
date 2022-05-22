@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+ worker:
+  build: .
+  environment:
+    TG_BOT_TOKEN: $TG_BOT_TOKEN
+    API_ID: $API_ID
+    API_HASH: $API_HASH
+    DATABASE_URI: $DATABASE_URI
+    DATABASE_NAME: $DATABASE_NAME
+    AUTH_USERS: $AUTH_USERS
+    START_IMG: $START_IMG
