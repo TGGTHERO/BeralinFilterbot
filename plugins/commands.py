@@ -212,7 +212,7 @@ async def bot_status(client,message):
 @trojanz.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     await message.reply_photo(
-        photo=START_IMG,
+        photo=https://te.legra.ph/file/94bc400ec947e39d0c028.jpg,
         caption=Script.START_MSG.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [
